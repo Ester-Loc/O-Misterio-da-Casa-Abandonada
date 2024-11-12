@@ -1,32 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <title>O Mistério da Casa Abandonada</title>
 </head>
+
 <body>
     <main>
         <div class="passo ativo" id="passo-0">
             <img src="cenario-passo0.jpg" alt="">
-            <p>"Você está passeando por uma cidade pequena quando encontra uma casa antiga e abandonada. Curioso, você decide investigar. Uma placa na entrada diz: "Cuidado! Propriedade particular.”</p>
+            <p>"Você está passeando por uma cidade pequena quando encontra uma casa antiga e abandonada. Curioso, você
+                decide investigar. Uma placa na entrada diz: "Cuidado! Propriedade particular.”</p>
             <button class="btn-proximo" data-proximo="1">Decidir Ignorar o Aviso</button>
             <button class="btn-proximo" data-proximo="2">Sair Imediatamente</button>
         </div>
         <div class="passo" id="passo-1">
-            <p>Ignorando o aviso, você entra na casa. Um arrepio percorre sua espinha ao perceber a atmosfera pesada e silenciosa que a envolve.</p>
+            <p>Ignorando o aviso, você entra na casa. Um arrepio percorre sua espinha ao perceber a atmosfera pesada e
+                silenciosa que a envolve.</p>
             <button class="btn-proximo" data-proximo="3">Explorar a Casa</button>
-            
+
         </div>
-        
+        <div class="passo" id="passo-2">
+            <p>A sensação de que a casa é assombrada se intensifica, e você decide sair imediatamente. No entanto, ao se
+                afastar, percebe que não pode ignorar a sensação de que há algo mais, algo que te chama de volta.
+                Hesitante, você considera retornar.</p>
+            <button class="btn-proximo" data-proximo="3">Explorar a Casa</button>
+
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Movido pela curiosidade, decide explorar mais a casa. Fotos antigas nas paredes mostram uma família que
+                morou ali, e um retrato de uma jovem mulher com um olhar triste chama sua atenção, criando uma conexão
+                estranha.</p>
+            <button class="btn-proximo" data-proximo="4">Subir ao andar superior</button>
+            <button class="btn-proximo" data-proximo="5">Investigar o porão</button>
+
+        </div>
+        <div class="passo" id="passo-4">
+            <p>Você decide subir as escadas para explorar o andar de cima, onde há um quarto com uma porta entreaberta.
+            </p>
+            <button class="btn-proximo" data-proximo="6">Descobrir um Quadro Antigo</button>
+            <button class="btn-proximo" data-proximo="7">Encontrar uma Carta</button>
+
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Você encontra uma escada que leva ao porão. A curiosidade é maior do que o medo, então você desce.</p>
+            <button class="btn-proximo" data-proximo="8">Descobrir um Diário</button>
+            <button class="btn-proximo" data-proximo="9">Encontrar uma Caixa Misteriosa</button>
+
+        </div>
+        <div class="passo" id="passo-6">
+            <p>Você entra no quarto e encontra um grande quadro com uma pintura da família, mas algo parece fora do
+                lugar.</p>
+            <button class="btn-proximo" data-proximo="10">Decidir Sair</button>
+
+        </div>
+        <div class="passo" id="passo-7">
+            <p>Uma carta amarrotada está sobre a mesa, com palavras que falam sobre uma tragédia.</p>
+            <button class="btn-proximo" data-proximo="10">Decidir Sair</button>
+
+        </div>
+        <div class="passo" id="passo-8">
+            <p>No porão, você encontra um diário empoeirado. Ao abrir, lê histórias sobre eventos estranhos que
+                ocorreram na casa.</p>
+            <button class="btn-proximo" data-proximo="10">Decidir Sair</button>
+
+        </div>
+        <div class="passo" id="passo-9">
+            <p>Você também encontra uma caixa antiga coberta de poeira, que parece ter algo dentro.</p>
+            <button class="btn-proximo" data-proximo="10">Decidir Sair</button>
+
+        </div>
+        <div class="passo" id="passo-10">
+            <p>Independente de sua escolha anterior, você sente um arrepio ao descobrir mais sobre a história da casa e
+                decide que é melhor sair. Ao chegar à porta, ouve um barulho atrás de você.</p>
+            <button class="btn-proximo" data-proximo="11">Ignorar o Barulho</button>
+            <button class="btn-proximo" data-proximo="12">Investigar o Barulho</button>
+
+        </div>
+        <div class="passo" id="passo-11">
+            <p>Você ignora e sai, mas o sentimento de que algo o seguiu permanece com você.</p>
+            <button class="btn-proximo" data-proximo="13">Consequência</button>
+
+        </div>
+        <div class="passo" id="passo-12">
+            <p>A curiosidade é maior, e você se pergunta o que poderia ser. Você se vira e decide investigar.</p>
+            <button class="btn-proximo" data-proximo="14">Consequência</button>
+
+        </div>
+        <div class="passo" id="passo-13">
+            <p>Você sai da casa e, ao chegar à calçada, sente uma brisa fria. Um papel amassado cai de sua mão, e você
+                percebe que o diário ficou para trás. Um sentimento de inquietação te acompanha.</p>
+            <button class="btn-proximo" data-proximo="19">Descobrir a Verdade</button>
+
+        </div>
+        <div class="passo" id="passo-14">
+            <p>Você segue o som e encontra uma porta secreta atrás de uma estante. A tensão cresce, e você sente que
+                pode haver algo importante ali.</p>
+            <button class="btn-proximo" data-proximo="15">Abrir a porta</button>
+
+        </div>
+        <div class="passo" id="passo-15">
+            <p>Você decide abrir a porta e entra em um quarto escuro. Sente um frio na espinha e a atmosfera é
+                opressiva.</p>
+            <button class="btn-proximo" data-proximo="16">Retornar ao porão</button>
+
+        </div>
+        <div class="passo" id="passo-16">
+            <p>Você decide que é melhor voltar ao porão para procurar mais pistas sobre o que está acontecendo.</p>
+            <button class="btn-proximo" data-proximo="17">Continuar a Explorar o Porão</button>
+            <button class="btn-proximo" data-proximo="18">Sair e Nunca Mais Voltar</button>
+
+        </div>
+        <div class="passo" id="passo-17">
+            <p>Ao voltar, você revisita o diário e se depara com informações cruciais que podem estar conectadas à casa.
+            </p>
+            <button class="btn-proximo" data-proximo="19">Descobrir a Verdade</button>
+
+        </div>
+        <div class="passo" id="passo-18">
+            <p>A sensação de medo é intensa, e você decide que é hora de ir embora para sempre.</p>
+            <button class="btn-proximo" data-proximo="19">Descobrir a Verdade</button>
+
+        </div>
+        <div class="passo" id="passo-19">
+            <p>Independente de sua escolha, ao investigar mais sobre a família e os eventos que ocorreram, você desvenda
+                segredos que mudaram a vida deles e que agora estão conectados a você. É um mistério que vai além do
+                tempo e do espaço, revelando verdades que você nunca esperou encontrar. Você percebe que a história da
+                casa também é a sua história.</p>
+
+        </div>
 
 
 
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
